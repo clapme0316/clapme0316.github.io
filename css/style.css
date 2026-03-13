@@ -6,6 +6,7 @@ html {
   word-break: keep-all;
   background-color: #111;
   color: var(--main-color01);
+  scroll-behavior: smooth;
 }
 .white-bg {
   background-color: #fff;
@@ -68,9 +69,34 @@ select:focus {
   outline-offset: 0 !important;
 }
 
+/*********************************margin*********************************/
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-12 {
+  margin-top: 12px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
 /*********************************flex*********************************/
 .flex {
   display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .gap10 {
@@ -99,6 +125,9 @@ select:focus {
   justify-content: center;
 }
 .justy-between {
+  justify-content: space-between;
+}
+.flex-end {
   justify-content: space-between;
 }
 
@@ -159,6 +188,51 @@ select:focus {
   background-color: #fff;
   border: 2px solid #111;
   color: #111;
+}
+
+/*********************************list*********************************/
+.list-style01 > li {
+  font-family: var(--font-type01);
+  font-size: 18px;
+  position: relative;
+  padding-left: 12px;
+}
+.list-style01 > li::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+.list-style01 > li + li {
+  margin-top: 16px;
+}
+.list-style01 > li span {
+  opacity: 0.7;
+  margin-left: 8px;
+}
+
+.list-style02 > li {
+  position: relative;
+  padding-left: 12px;
+  color: #b3b3b3;
+}
+.list-style02 > li::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 1px;
+  background-color: #b3b3b3;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.list-style02 > li + li {
+  margin-top: 8px;
 }
 /*********************************intro*********************************/
 .fixPage {
@@ -344,7 +418,7 @@ select:focus {
 
 .index {
   padding: 100px;
-  padding-bottom: 200px;
+  border-bottom: 1px solid #fff;
 }
 .index .index-link {
   opacity: 0.4;
@@ -355,15 +429,16 @@ select:focus {
   font-size: 40px;
 }
 .index .link-wrap {
+  width: 100%;
   margin-left: 320px;
   font-family: var(--font-type02);
-  gap: 200px;
+  gap: 80px;
 }
 .index-link .no {
   font-family: var(--font-type02);
   font-size: 80px;
   font-weight: 800;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .index-link .s-title {
   font-family: var(--font-type02);
@@ -371,13 +446,13 @@ select:focus {
   font-size: 40px;
   margin-bottom: 28px;
 }
-.index-link .work-list li {
+.index-link .work-list > li {
   font-family: var(--font-type02);
   font-size: 28px;
   padding-left: 20px;
   position: relative;
 }
-.index-link .work-list li::before {
+.index-link .work-list > li::before {
   content: "";
   display: block;
   width: 10px;
@@ -387,10 +462,295 @@ select:focus {
   top: 15px;
   left: 0;
 }
-.index-link .work-list li + li {
+.index-link .work-list > li + li {
   margin-top: 16px;
 }
 .index-link:hover,
 .index-link:focus {
   opacity: 1;
+}
+
+/**************************탭메뉴**************************/
+.tab-wrap {
+  overflow: hidden;
+}
+.tab-item + .tab-item {
+  margin-top: 10px;
+}
+.tab-tit {
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.tab-tit::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.tab-tit::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: calc(-100% - 20px);
+  transition: 0.5s;
+  z-index: -1;
+}
+.tab-tit.active,
+.tab-tit:hover {
+  color: #111;
+}
+.tab-tit:hover::before,
+.tab-tit.active::before {
+  background-color: #111;
+}
+.tab-tit.active::after,
+.tab-tit:hover::after {
+  left: 0;
+}
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.tab-inner {
+  padding: 20px;
+}
+/* 탭 활성화 */
+.tab-content .dev-list > li {
+  font-family: var(--font-type01);
+  padding: 20px 10px;
+  border-bottom: 1px solid #fff;
+}
+.tab-content .dev-list > li > div {
+  font-size: 20px;
+}
+.tab-content .dev-list > li .tit {
+  min-width: 160px;
+}
+.link-btn01 {
+  display: flex;
+  width: fit-content;
+  padding: 12px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 0.3s;
+}
+.link-btn01:hover {
+  background-color: #fff;
+  color: #111;
+  font-weight: 700;
+  border: 1px solid #fff;
+}
+.link-btn02 {
+  width: fit-content;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+.link-btn02 p {
+  font-size: 16px;
+}
+
+/**************************ending**************************/
+.ending {
+  padding: 100px;
+}
+.ending p {
+  text-align: center;
+}
+.ending p.end-txt {
+  font-family: var(--font-type02);
+  font-weight: 800;
+  font-size: 50px;
+}
+.ending p.sub-txt {
+  font-family: var(--font-type02);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+/**************************top btn**************************/
+.top-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #fff;
+  color: #111;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 60px;
+  opacity: 0.5;
+}
+.top-btn:hover {
+  opacity: 1;
+  color: #111;
+}
+
+/**************************design**************************/
+.design .left-menu {
+  width: 400px;
+  padding: 40px;
+  border-right: 1px solid #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+.design .left-menu .title {
+  font-family: var(--font-type02);
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+.design .left-menu .ui-menu li {
+  padding: 10px 0;
+  font-family: var(--font-type02);
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.design .left-menu .ui-menu li::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: 0.3s;
+}
+.design .left-menu .ui-menu li:hover::before {
+  left: 0;
+}
+.design .left-menu .ui-menu li + li {
+  margin-top: 20px;
+}
+.design .left-menu .ui-menu li.active::before {
+  left: 0;
+}
+
+.design .content {
+  width: calc(100% - 400px);
+  height: 100vh;
+  overflow-y: auto;
+}
+.design .content > div {
+  display: none;
+}
+.design .content > div.active {
+  display: block;
+}
+.design .content .project {
+  width: calc(100% / 3);
+  overflow: hidden;
+  position: relative;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.design .content .project .inner .img img {
+  width: 100%;
+}
+.design .content .project .inner p {
+  padding: 10px;
+  font-family: var(--font-type02);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.design .content .project:hover .shadow-box {
+  bottom: 0;
+}
+.design .content .project .shadow-box {
+  width: 100%;
+  height: 100%;
+  padding: 80px 60px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: 0.3s;
+}
+.design .content .project .shadow-box .site-tit {
+  font-size: 22px;
+  font-weight: 700;
+}
+.design .content .project .shadow-box p,
+.design .content .project .shadow-box li {
+  font-family: var(--font-type01);
+  font-size: 20px;
+  color: #fff;
+}
+.design .content .project .shadow-box .list-style01 li + li {
+  margin-top: 8px;
+}
+.design .content .project .shadow-box .list-style01 li {
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+.design .content .tab-con02,
+.design .content .tab-con03 {
+  padding: 60px;
+}
+.design .content .info {
+  width: fit-content;
+  background-color: #fff;
+}
+.design .content .info > p {
+  padding: 10px;
+  font-family: var(--font-type02);
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+.design .content .design-link {
+  width: calc((100% / 4) - 40px);
+  height: 60px;
+  padding: 0 10px;
+  border: 1px solid #fff;
+  position: relative;
+}
+.design .content .design-link p {
+  font-family: var(--font-type02);
+  font-weight: 600;
+  font-size: 20px;
+}
+.design .content .design-link .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #111;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+}
+.design .content .design-link:hover .icon {
+  top: -20px;
+  right: -20px;
+}
+.design .content .design-link > p > span {
+  font-size: 14px;
+  opacity: 0.8;
 }
