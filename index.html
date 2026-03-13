@@ -600,22 +600,22 @@
         header.addEventListener("click", function () {
           const parent = this.parentElement;
           const content = parent.querySelector(".tab-content");
-          const isActive = parent.classList.contains("active");
 
-          document.querySelectorAll(".tab-item").forEach((item) => {
-            item.classList.remove("active");
-            item.querySelector(".tab-tit").classList.remove("active");
-            item.querySelector(".tab-content").style.maxHeight = null;
-          });
+          const isActive = parent.classList.contains("active");
 
           if (!isActive) {
             parent.classList.add("active");
             this.classList.add("active");
             content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            parent.classList.remove("active");
+            this.classList.remove("active");
+            content.style.maxHeight = null;
           }
         });
       });
     </script>
   </body>
 </html>
+
 
