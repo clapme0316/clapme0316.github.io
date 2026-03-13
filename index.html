@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/icon_img.png" />
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>박수미 포트폴리오</title>
   </head>
-  <body>
+  <body id="top">
     <div class="popup_bg" id="mainPopup">
       <div class="popup flex flex-column align-center gap40">
         <div class="txt">
@@ -129,13 +130,6 @@
               </li>
               <li>
                 <ul class="career-con flex gap60">
-                  <li class="date">2021.05 ~ 2021.11</li>
-                  <li class="edu">[그린컴퓨터아카데미] 반응형 웹디자인(UIUX) & 웹퍼블리셔 디지털 실무 양성과정</li>
-                  <li class="work">수료</li>
-                </ul>
-              </li>
-              <li>
-                <ul class="career-con flex gap60">
                   <li class="date">2015.03 ~ 2020.08</li>
                   <li class="edu">부산외국어대학교 경영학부 회계전공</li>
                   <li class="work">졸업</li>
@@ -154,15 +148,416 @@
       </div>
       <div class="index flex">
         <p class="title">INDEX</p>
-        <div class="link-wrap flex">
-          <a href="./developing.html" class="index-link">
+        <div class="link-wrap flex flex-column">
+          <div class="index-link">
             <p class="no">01</p>
             <p class="s-title">Developing</p>
-            <ul class="work-list">
-              <li>사내게시판</li>
-            </ul>
-          </a>
-          <a href="./design.html" class="index-link">
+            <div class="tab-wrap">
+              <div class="tab-item">
+                <div class="tab-tit">클래스 다이어그램</div>
+                <div class="tab-content">
+                  <div class="tab-inner">
+                    <ul class="dev-list">
+                      <li class="flex">
+                        <div class="tit">프로젝트명</div>
+                        <div class="con">질럿(Zealot)</div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">주제</div>
+                        <div class="con">스타크래프트 질럿, 뮤탈, 메딕을 활용한 클래스 다이어그램 실습</div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">기능</div>
+                        <div class="con">
+                          <ul class="list-style01">
+                            <li>
+                              인터페이스 <span>공격 대상 타입에 따라 공격 가능 여부 분류</span>
+                              <ul class="list-style02 mt-8">
+                                <li>공중 공격 가능, 지상 공격 가능으로 분류</li>
+                              </ul>
+                            </li>
+                            <li>
+                              인터페이스 <span>체력 회복 분류</span>
+                              <ul class="list-style02 mt-8">
+                                <li>체력 회복 가능 정의</li>
+                              </ul>
+                            </li>
+                            <li>
+                              공격의 행위를 정의
+                              <ul class="list-style02 mt-8">
+                                <li>공격 데미지, 공격 횟수, 공격의 반복 주기 정의</li>
+                              </ul>
+                            </li>
+                            <li>위치를 x축, y축, z축으로 분리</li>
+                            <li>
+                              추상 클래스 - 유닛
+                              <ul class="list-style02 mt-8">
+                                <li>위치, 최대 체력, 현재 체력, 이동 속도, 사거리, 크기, 방어, 종족, 공격 가능 여부를 정의</li>
+                              </ul>
+                            </li>
+                            <li>
+                              추상 클래스 - 공중 유닛, 지상 유닛
+                              <ul class="list-style02 mt-8">
+                                <li>이동, 현재위치와 클릭 지점을 왕복하는 행위 정의</li>
+                              </ul>
+                            </li>
+                            <li>
+                              뮤탈
+                              <ul class="list-style02 mt-8">
+                                <li>체력 회복 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              질럿
+                              <ul class="list-style02 mt-8">
+                                <li>쉴드 보유</li>
+                              </ul>
+                            </li>
+                            <li>
+                              메딕
+                              <ul class="list-style02 mt-8">
+                                <li>마나 사용</li>
+                              </ul>
+                            </li>
+                            <li>
+                              쉴드
+                              <ul class="list-style02 mt-8">
+                                <li>최대 방어력, 현재 방어력, 쉴드 + 방어력 정의</li>
+                              </ul>
+                            </li>
+                            <li>
+                              마나
+                              <ul class="list-style02 mt-8">
+                                <li>현재 마력, 최대 마력 정의</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">클래스 다이어그램</div>
+                        <div class="con">
+                          <a href="./img/diagram.jpg" target="_blank" title="새창열림">
+                            <img src="./img/diagram.jpg" alt="클래스 다이어그램" />
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-tit">네트워크 프로토콜</div>
+                <div class="tab-content">
+                  <div class="tab-inner">
+                    <ul class="dev-list">
+                      <li class="flex">
+                        <div class="tit">프로젝트명</div>
+                        <div class="con">종두ON</div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">주제</div>
+                        <div class="con">(팀 프로젝트) 네트워크 프로토콜을 이용한 채팅 시스템 설계 및 UI구현</div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">바로보기</div>
+                        <div class="con flex gap10">
+                          <a href="./img/protocol.png" target="_blank" title="새창열림" class="link-btn01">프로토콜 보러가기</a>
+                          <a href="./file/protocol.pdf" target="_blank" title="새창열림" class="link-btn01">UI 보러가기</a>
+                        </div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">기능</div>
+                        <div class="con">
+                          <ul class="list-style01">
+                            <li>
+                              입장
+                              <ul class="list-style02 mt-8">
+                                <li>닉네임을 입력하여 접속, 한 글자 이상 입력</li>
+                                <li>공백 불가능, 중복 불가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              대기열 입장
+                              <ul class="list-style02 mt-8">
+                                <li>대기열 대기 인원과 채팅 가능</li>
+                                <li>대기열 대기 인원에게 귓속말 가능</li>
+                                <li>생성된 채팅방이 있을 경우 입장 가능</li>
+                                <li>방 생성 가능</li>
+                                <li>로그아웃 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              채팅방 만들기
+                              <ul class="list-style02 mt-8">
+                                <li>방 제목, 인원수, 비밀번호 설정 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              채팅방 입장
+                              <ul class="list-style02 mt-8">
+                                <li>채팅방 참가 인원들과 채팅 가능</li>
+                                <li>방 나가기 가능</li>
+                                <li>방장일 경우 방 정보 수정 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              방 정보 수정
+                              <ul class="list-style02 mt-8">
+                                <li>방 제목, 인원수, 비밀번호 설정 수정 가능</li>
+                                <li>수정 중 취소 가능</li>
+                                <li>현재 방 삭제 가능</li>
+                                <li>수정 완료 시 채팅방에 안내 문구 표시</li>
+                              </ul>
+                            </li>
+                            <li>
+                              채팅방에 대기열 인원 초대 기능
+                              <ul class="list-style02 mt-8">
+                                <li>대기열 인원 초대 가능</li>
+                                <li>초대 완료한 경우 안내 메시지 표시</li>
+                              </ul>
+                            </li>
+                            <li>
+                              채팅방 인원이 초과한 경우
+                              <ul class="list-style02 mt-8">
+                                <li>입장 불가. 안내 팝업 노출</li>
+                              </ul>
+                            </li>
+                            <li>
+                              암호가 등록된 채팅방
+                              <ul class="list-style02 mt-8">
+                                <li>채팅방 클릭 시 암호 입력 팝업 노출</li>
+                                <li>암호가 일치할 시 채팅방 입장. 불일치 시 안내 문구와 함께 입장 불가</li>
+                              </ul>
+                            </li>
+                            <li>
+                              초대받았을 때
+                              <ul class="list-style02 mt-8">
+                                <li>초대받았을 시 안내 팝업이 뜨며 수락 및 거절 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              방장일 경우
+                              <ul class="list-style02 mt-8">
+                                <li>본인을 제외한 인원에게 방장 위임, 강퇴 가능</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">담당기능</div>
+                        <div class="con">
+                          <ul class="list-style01">
+                            <li>
+                              서버 기능 정의
+                              <ul class="list-style02 mt-8">
+                                <li>
+                                  서버 대기열 입장 시 닉네임 설정<br />
+                                  (중복 방지, 로비 화면 전환, 대기실 대기열 인원 갱신)
+                                </li>
+                                <li>
+                                  방 생성 후 생성된 방 입장<br />
+                                  (방 제목 중복 확인, 생성 완료 메시지 출력, 대기열 대기 인원 갱신, 채팅방 목록 갱신)
+                                </li>
+                                <li>
+                                  채팅방 입장<br />
+                                  (인원수 카운트, 입장 시 화면 전환, 인원 목록 갱신과 메시지 출력)
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              UI구현
+                              <ul class="list-style02 mt-8">
+                                <li>ppt로 데이터의 흐름을 파악하여 화면 구성과 전환 설계</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-tit">사내게시판</div>
+                <div class="tab-content">
+                  <div class="tab-inner">
+                    <ul class="dev-list">
+                      <li class="flex">
+                        <div class="tit">프로젝트명</div>
+                        <div class="con">두슬라 (Doosla)</div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">주제</div>
+                        <div class="con">(팀 프로젝트) 자바,스프링 활용 롯데정보통신 사내 커뮤니티 게시판 사이트 개발</div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">환경</div>
+                        <div class="con">JDK17.0.13 버전, Springboot, MySQL</div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">결과보고서</div>
+                        <div class="con flex gap10">
+                          <a href="./file/doosla.pdf" target="_blank" title="새창열림" class="link-btn01">PDF 결과보고서 보러가기</a>
+                          <a href="https://www.notion.so/2b63ad2be43a82f3a48081f9a0c6aecd?source=copy_link" target="_blank" title="새창열림" class="link-btn01">노션 결과보고서 보러가기</a>
+                        </div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">깃허브</div>
+                        <div class="con flex gap10">
+                          <a href="https://github.com/arvarta/2026_doosla_client" target="_blank" title="새창열림" class="link-btn01">client</a>
+                          <a href="https://github.com/arvarta/2026_doosla_api_server" target="_blank" title="새창열림" class="link-btn01">api-server</a>
+                        </div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">시연영상</div>
+                        <div class="con">
+                          <a href="https://www.youtube.com/watch?v=VjWpJs5OUwk" target="_blank" title="새창열림" class="link-btn01">Youtube로 이동하기</a>
+                        </div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">기능</div>
+                        <div class="con">
+                          <ul class="list-style01">
+                            <li>
+                              로그인/회원가입
+                              <ul class="list-style02 mt-8">
+                                <li>최초사용자는 관리자에게 허가신청을 전송</li>
+                                <li>ID, 사번, 비밀번호, 닉네임을 입력하여 허가신청. ID,닉네임은 중복검사 진행</li>
+                                <li>허가된 사용자는 회원가입 시 작성한 아이디와 패스워드로 로그인 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              통합검색
+                              <ul class="list-style02 mt-8">
+                                <li>문의 게시판을 제외한 모든 게시판을 통합하여 검색이 가능함</li>
+                              </ul>
+                            </li>
+                            <li>
+                              게시판
+                              <ul class="list-style02 mt-8">
+                                <li>게시판 내에서 제목, 작성자, 내용으로 검색가능</li>
+                                <li>공지글 상단 고정 가능(최대 5개), 첨부파일 여부 판단하여 목록에서 표시</li>
+                              </ul>
+                            </li>
+                            <li>
+                              게시글 작성/수정/삭제/추천/신고 기능
+                              <ul class="list-style02 mt-8">
+                                <li>텍스트 에디터 API 사용, 간단한 텍스트 편집, 이미지 첨부 가능</li>
+                                <li>추천 및 신고 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              파일 첨부 기능
+                              <ul class="list-style02 mt-8">
+                                <li>게시글 작성 시 문서, PDF, 이미지 등의 다양한 형태의 파일 첨부 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              댓글 및 대댓글 기능
+                              <ul class="list-style02 mt-8">
+                                <li>댓글/대댓글 작성, 수정, 삭제, 신고 기능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              게시판 생성 신청 기능
+                              <ul class="list-style02 mt-8">
+                                <li>사용자가 새로운 게시판 생성을 요청할 수 있는 신청 기능 제공</li>
+                              </ul>
+                            </li>
+                            <li>
+                              KAKAO Map API 연동
+                              <ul class="list-style02 mt-8">
+                                <li>게시글 작성 시 지도 기능 사용하여 위치 첨부 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              알림 기능
+                              <ul class="list-style02 mt-8">
+                                <li>내가 작성한 글에 댓글이 달릴 경우, 내가 작성한 댓글에 답글이 달릴 경우, 문 의글에 답변이 달렸을 경우 팝업으로 알려줌</li>
+                              </ul>
+                            </li>
+                            <li>
+                              마이페이지
+                              <ul class="list-style02 mt-8">
+                                <li>회원 정보 수정, 문의내역, 내가 작성한 글, 내가 작성한 댓글 확인 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              관리자
+                              <ul class="list-style02 mt-8">
+                                <li>허가신청 유저 승인/거부 가능. 특정 유저 사용 정지/정지해제 가능</li>
+                                <li>게시판 생성/수정/삭제 가능. 특정 권한 게시판에 유저 추가 가능</li>
+                                <li>게시글 상단 고정 및 해제 가능. 모든 게시글 삭제 가능</li>
+                                <li>모든 문의 열람 가능. 답변 가능</li>
+                                <li>삭제된 게시글, 댓글 검색/조회/열람 가능. 삭제된 게시글 복구 및 영구 삭제 가능</li>
+                                <li>신고된 게시글, 댓글 검색/조회/열람 가능. 신고된 게시글 철회/삭제 가능</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="flex">
+                        <div class="tit">담당기능</div>
+                        <div class="con">
+                          <ul class="list-style01">
+                            <li>
+                              게시판 목록조회 및 페이징 구현
+                              <ul class="list-style02 mt-8">
+                                <li>게시판 목록 구성, 한 페이지에 10개씩 노출하여 페이징으로 이동하여 확 인 가능</li>
+                                <li>현재 페이지 노출, 이전, 다음 페이지 이동 구현</li>
+                              </ul>
+                            </li>
+                            <li>
+                              게시글 CRUD 구현, 추천, 신고 기능 구현
+                              <ul class="list-style02 mt-8">
+                                <li>텍스트 에디터 API를 사용한 게시글 작성 기능 구현</li>
+                                <li>다양한 형태의 파일 첨부 가능</li>
+                                <li>추천 및 신고 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              게시글 이전글, 다음글 이동 기능 구현
+                              <ul class="list-style02 mt-8">
+                                <li>게시글 상세보기 에서 이전글, 다음글 이동 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              댓글 CRUD, 답글, 신고 기능 구현
+                              <ul class="list-style02 mt-8">
+                                <li>댓글, 답글 작성, 수정, 삭제 가능</li>
+                                <li>댓글 신고 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              관리자 신고관리 기능 구현
+                              <ul class="list-style02 mt-8">
+                                <li>신고된 게시글이나 댓글을 관리자 계정으로 확인 가능</li>
+                                <li>검색, 조회, 열람 가능</li>
+                                <li>신고된 게시글 목록 제외, 삭제 가능</li>
+                              </ul>
+                            </li>
+                            <li>
+                              UI/UX 설계 및 구현
+                              <ul class="list-style02 mt-8">
+                                <li>신고된 게시글이나 댓글을 관리자 계정으로 확인 가능</li>
+                                <li>사이트 UI/UX 디자인 설계</li>
+                                <li>HTML, CSS로 구현</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="./design.html" class="index-link" target="_blank" title="새창열림">
             <p class="no">02</p>
             <p class="s-title">UI/UX</p>
             <ul class="work-list">
@@ -173,9 +568,19 @@
           </a>
         </div>
       </div>
+
+      <div class="ending">
+        <div class="flex flex-column justy-center">
+          <p class="end-txt">끝까지 봐주셔서 감사합니다.</p>
+          <p class="sub-txt mt-40">오늘보다 더 나은 내일을 위해 노력하겠습니다. <br />오늘도 행복한 하루되세요.</p>
+        </div>
+      </div>
+
+      <a href="#top" class="top-btn">Top</a>
     </div>
 
     <script>
+      // 팝업
       const popup = document.getElementById("mainPopup");
       const closeBtn = document.getElementById("closeBtn");
 
@@ -187,8 +592,29 @@
         popup.style.display = "none";
         localStorage.setItem("hidePopup", "true");
       });
+
+      // 탭 메뉴
+      const tabHeaders = document.querySelectorAll(".tab-tit");
+
+      tabHeaders.forEach((header) => {
+        header.addEventListener("click", function () {
+          const parent = this.parentElement;
+          const content = parent.querySelector(".tab-content");
+          const isActive = parent.classList.contains("active");
+
+          document.querySelectorAll(".tab-item").forEach((item) => {
+            item.classList.remove("active");
+            item.querySelector(".tab-tit").classList.remove("active");
+            item.querySelector(".tab-content").style.maxHeight = null;
+          });
+
+          if (!isActive) {
+            parent.classList.add("active");
+            this.classList.add("active");
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      });
     </script>
   </body>
 </html>
-
-

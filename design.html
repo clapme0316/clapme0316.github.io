@@ -1,13 +1,308 @@
 <!doctype html>
-<html lang="ko" class="white-bg">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/icon_img.png" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <title>박수미 포트폴리오</title>
   </head>
-  <body>
-    <h1>디자인 관련 포폴이 들어갑니다.</h1>
-    <h1>탭메뉴 형식으로 구성해서 하나씩 노출됩니다.</h1>
+  <body class="design">
+    <div class="flex">
+      <div class="left-menu">
+        <h1 class="title">UI/UX</h1>
+        <ul class="ui-menu">
+          <li>Project</li>
+          <li>Design</li>
+          <li>Maintenance</li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="tab-con01">
+          <div class="flex flex-wrap">
+            <a href="https://health.pusan.ac.kr/" target="_blank" title="새창열림" class="project">
+              <div class="inner flex flex-column">
+                <div class="img">
+                  <img src="./img/pro02.png" alt="부산대학교 보건진료소" />
+                </div>
+                <p>부산대학교 보건진료소</p>
+              </div>
+              <div class="shadow-box flex flex-column">
+                <p class="site-tit">부산대학교 보건진료소</p>
+                <ul class="list-style01 mt-20">
+                  <li>Design 100%</li>
+                  <li>Publishing 100%</li>
+                </ul>
+                <div class="link-btn02 mt-40 flex gap20">
+                  <p>사이트로 이동하기</p>
+                  <img src="./img/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a href="https://ecosl.pusan.ac.kr/ecosl" target="_blank" title="새창열림" class="project">
+              <div class="inner flex flex-column">
+                <div class="img">
+                  <img src="./img/pro04.png" alt="부산대학교 친환경선박연구실" />
+                </div>
+                <p>부산대학교 친환경선박연구실</p>
+              </div>
+              <div class="shadow-box flex flex-column">
+                <p class="site-tit">부산대학교 친환경선박연구실</p>
+                <ul class="list-style01 mt-20">
+                  <li>Publishing 100%</li>
+                  <li>서브페이지 디자인 및 퍼블리싱</li>
+                  <li>유지보수</li>
+                </ul>
+                <div class="link-btn02 mt-40 flex gap20">
+                  <p>사이트로 이동하기</p>
+                  <img src="./img/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a href="https://www.h2ok.kr/h2ok" target="_blank" title="새창열림" class="project">
+              <div class="inner flex flex-column">
+                <div class="img">
+                  <img src="./img/pro05.png" alt="부산대학교 액화수소운반선" />
+                </div>
+                <p>부산대학교 액화수소운반선</p>
+              </div>
+              <div class="shadow-box flex flex-column">
+                <p class="site-tit">부산대학교 액화수소운반선</p>
+                <ul class="list-style01 mt-20">
+                  <li>영문사이트 포함</li>
+                  <li>Publishing 100%</li>
+                  <li>서브페이지 디자인 100%</li>
+                  <li>유지보수</li>
+                </ul>
+                <div class="link-btn02 mt-40 flex gap20">
+                  <p>사이트로 이동하기</p>
+                  <img src="./img/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a href="https://dorm.pusan.ac.kr/" target="_blank" title="새창열림" class="project">
+              <div class="inner flex flex-column">
+                <div class="img">
+                  <img src="./img/pro03.png" alt="부산대학교 대학생활원" />
+                </div>
+                <p>부산대학교 대학생활원</p>
+              </div>
+              <div class="shadow-box flex flex-column">
+                <p class="site-tit">부산대학교 대학생활원</p>
+                <ul class="list-style01 mt-20">
+                  <li>인트로 페이지 반응형 퍼블리싱</li>
+                  <li>서브페이지 디자인 100%</li>
+                  <li>유지보수</li>
+                </ul>
+                <div class="link-btn02 mt-40 flex gap20">
+                  <p>사이트로 이동하기</p>
+                  <img src="./img/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a href="https://www.bisco.or.kr/" target="_blank" title="새창열림" class="project">
+              <div class="inner flex flex-column">
+                <div class="img">
+                  <img src="./img/pro01.png" alt="부산시설공단" />
+                </div>
+                <p>부산시설공단</p>
+              </div>
+              <div class="shadow-box flex flex-column">
+                <p class="site-tit">부산시설공단</p>
+                <ul class="list-style01 mt-20">
+                  <li>서브페이지 내 순서도이미지 작업</li>
+                  <li>웹접근성 심사작업</li>
+                  <li>유지보수</li>
+                </ul>
+                <div class="link-btn02 mt-40 flex gap20">
+                  <p>사이트로 이동하기</p>
+                  <img src="./img/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a href="./img/pro07-1.png" target="_blank" title="새창열림" class="project">
+              <div class="inner flex flex-column">
+                <div class="img">
+                  <img src="./img/pro07.png" alt="부산대학교 2024 입시 인트로페이지" />
+                </div>
+                <p>부산대학교 2024 입시 인트로페이지</p>
+              </div>
+              <div class="shadow-box flex flex-column">
+                <p class="site-tit">부산대학교 2024 입시 인트로페이지</p>
+                <ul class="list-style01 mt-20">
+                  <li>Design 100%</li>
+                  <li>Publishing 100%</li>
+                  <li>유지보수</li>
+                </ul>
+                <div class="link-btn02 mt-40 flex gap20">
+                  <p>크게보기</p>
+                  <img src="./img/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </a>
+            <a href="./img/pro06-1.jpg" target="_blank" title="새창열림" class="project">
+              <div class="inner flex flex-column">
+                <div class="img">
+                  <img src="./img/pro06.png" alt="부산보건대학교 2024 입시 인트로페이지" />
+                </div>
+                <p>부산보건대학교 2024 입시 인트로페이지</p>
+              </div>
+              <div class="shadow-box flex flex-column">
+                <p class="site-tit">부산보건대학교 2024 입시 인트로페이지</p>
+                <ul class="list-style01 mt-20">
+                  <li>Design 100%</li>
+                  <li>Publishing 100%</li>
+                  <li>유지보수</li>
+                </ul>
+                <div class="link-btn02 mt-40 flex gap20">
+                  <p>크게보기</p>
+                  <img src="./img/arrow.png" alt="arrow" />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="tab-con02">
+          <div class="info">
+            <p>* 재직당시 작업한 디자인 시안 입니다.</p>
+          </div>
+          <div class="flex flex-wrap gap40 mt-40">
+            <a href="https://xd.adobe.com/view/e8c4a474-bb34-4dad-a9bf-3744d7de1406-bd97/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>인제대학교 글로컬대학</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://xd.adobe.com/view/763ef606-e463-4736-b4e1-96d7b56d7c01-236d/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>부산대학교 액화수소운반선</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://xd.adobe.com/view/fa281f0c-5e56-4f7b-bc37-6c5240d38374-af7b/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>부산대학교 교원채용</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="./img/de01.png" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>부산대학교 뉴스레터</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+          </div>
+
+          <div class="info mt-60">
+            <p>Template</p>
+          </div>
+          <div class="flex flex-wrap gap40 mt-20">
+            <a href="https://xd.adobe.com/view/92429d54-e15f-4651-94e4-49265e59b2cf-c711/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>유아교육과</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://xd.adobe.com/view/185b7103-d5b4-4d0a-86fa-b9281331c34a-4d08/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>디지털정보통신과</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://xd.adobe.com/view/50899028-276e-4451-9df4-a27b71bcebf8-05da/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>바이오헬스융합대학</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://xd.adobe.com/view/df2dce78-82f1-4038-b7e3-f46360706f0e-8a7e/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>사회복지학과</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="tab-con03">
+          <div class="info mt-60">
+            <p>* 아이디노 재직당시 담당했던 유지보수 사이트들 입니다.</p>
+          </div>
+          <div class="flex flex-wrap gap40 mt-40">
+            <a href="https://www.bisco.or.kr/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>부산시설공단 <br /><span>* 광안대교를 제외한 모든 시설 사이트 포함</span></p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://www.pusan.ac.kr/kor/Main.do" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>부산대학교</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://www.gimhae.ac.kr/CmsHome/MainDefault.aspx" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>김해대학교</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://www.hanyeong.ac.kr/main/page/default.aspx" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>한영대학교</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://www.ansan.ac.kr/intro" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>안산대학교 <br /><span>* 학과 사이트 포함</span></p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://www.kyci.or.kr/userSite/index.asp" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>한국청소년상담복지개발원</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://icus.inje.ac.kr/linc" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>인제대학교 LINC</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://ipsi.bhu.ac.kr/ipsi" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>부산보건대학교</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+            <a href="https://www.bpu.ac.kr/" target="_blank" title="새창열림" class="design-link flex align-center">
+              <p>부산장신대학교</p>
+              <div class="icon flex align-center justy-center">
+                <img src="./img/arrow02.png" alt="arrow" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuItems = document.querySelectorAll(".left-menu li");
+      const contentItems = document.querySelectorAll(".content > div");
+
+      menuItems.forEach((menu, index) => {
+        menu.addEventListener("click", () => {
+          menuItems.forEach((item) => item.classList.remove("active"));
+          contentItems.forEach((con) => con.classList.remove("active"));
+
+          menu.classList.add("active");
+          contentItems[index].classList.add("active");
+        });
+      });
+
+      menuItems[0].click();
+    </script>
   </body>
 </html>
