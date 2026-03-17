@@ -684,7 +684,7 @@ select:focus {
 .design .content .project .shadow-box {
   width: 100%;
   height: 100%;
-  padding: 80px 60px;
+  padding: 40px 60px;
   background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   bottom: -100%;
