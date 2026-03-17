@@ -608,7 +608,7 @@ select:focus {
 
 /**************************design**************************/
 .design .left-menu {
-  width: 400px;
+  width: 360px;
   padding: 40px;
   border-right: 1px solid #fff;
   height: 100vh;
@@ -651,7 +651,7 @@ select:focus {
 }
 
 .design .content {
-  width: calc(100% - 400px);
+  width: calc(100% - 360px);
   height: 100vh;
   overflow-y: auto;
 }
