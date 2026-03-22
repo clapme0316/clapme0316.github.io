@@ -191,10 +191,10 @@ select:focus {
 }
 
 /*********************************list*********************************/
-ul li {
+.b-list li {
   font-size: 18px;
 }
-ul li + li {
+.b-list li + li {
   margin-top: 10px;
 }
 .list-style01 > li {
