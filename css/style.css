@@ -411,6 +411,9 @@ select:focus {
   font-weight: 300;
   color: #ebebeb;
 }
+.career-box .career-list li.date {
+  width: 166px;
+}
 .career-box .career-list li.edu {
   width: 810px;
 }
